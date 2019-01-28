@@ -31,7 +31,11 @@ BluetoothSerial.write = (data) => {
   if (typeof data === 'string') {
     data = new Buffer(data)
   }
-  return BluetoothSerial.writeToDevice(data.toString('base64'))
+  return BluetoothSerial.writeToDevice(data.toString('base64'));
+}
+
+BluetoothSerial.readUntilDelimiter = (delimiter) => {
+  return BluetoothSerial.readUntilDelimiter(delimiter);
 }
 
 module.exports = BluetoothSerial
