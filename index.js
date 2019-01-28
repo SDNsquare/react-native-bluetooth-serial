@@ -34,6 +34,10 @@ BluetoothSerial.write = (data) => {
   return BluetoothSerial.writeToDevice(data.toString('base64'));
 }
 
+BluetoothSerial.read = () => {
+  return BluetoothSerial.readFromDevice();
+}
+
 BluetoothSerial.readUntilDelimiter = (delimiter) => {
   return BluetoothSerial.readUntilDelimiter(delimiter);
 }
